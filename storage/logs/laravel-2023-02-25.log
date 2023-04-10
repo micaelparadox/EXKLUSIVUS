@@ -1,0 +1,1984 @@
+[2023-02-25 16:40:14] production.ERROR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'vip' for key 'bravo_seat_type_code_unique' (SQL: insert into `bravo_seat_type` (`name`, `code`, `create_user`, `updated_at`, `created_at`) values (Vip, vip, 1, 2023-02-25 16:40:13, 2023-02-25 16:40:13)) {"userId":1,"exception":"[object] (Illuminate\\Database\\QueryException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'vip' for key 'bravo_seat_type_code_unique' (SQL: insert into `bravo_seat_type` (`name`, `code`, `create_user`, `updated_at`, `created_at`) values (Vip, vip, 1, 2023-02-25 16:40:13, 2023-02-25 16:40:13)) at /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:760)
+[stacktrace]
+#0 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(720): Illuminate\\Database\\Connection->runQueryCallback()
+#1 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(546): Illuminate\\Database\\Connection->run()
+#2 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(498): Illuminate\\Database\\Connection->statement()
+#3 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/Processor.php(32): Illuminate\\Database\\Connection->insert()
+#4 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(3270): Illuminate\\Database\\Query\\Processors\\Processor->processInsertGetId()
+#5 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(1861): Illuminate\\Database\\Query\\Builder->insertGetId()
+#6 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1322): Illuminate\\Database\\Eloquent\\Builder->__call()
+#7 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1287): Illuminate\\Database\\Eloquent\\Model->insertAndSetId()
+#8 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1128): Illuminate\\Database\\Eloquent\\Model->performInsert()
+#9 /home/fk59ix5w/public_html/app/BaseModel.php(60): Illuminate\\Database\\Eloquent\\Model->save()
+#10 /home/fk59ix5w/public_html/database/seeders/FlightSeeder.php(104): App\\BaseModel->save()
+#11 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Database\\Seeders\\FlightSeeder->run()
+#12 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#13 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#14 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#15 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(651): Illuminate\\Container\\BoundMethod::call()
+#16 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(184): Illuminate\\Container\\Container->call()
+#17 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(193): Illuminate\\Database\\Seeder->Illuminate\\Database\\{closure}()
+#18 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(61): Illuminate\\Database\\Seeder->__invoke()
+#19 /home/fk59ix5w/public_html/themes/Mytravel/Database/Seeders/DatabaseSeeder.php(34): Illuminate\\Database\\Seeder->call()
+#20 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Themes\\Mytravel\\Database\\Seeders\\DatabaseSeeder->run()
+#21 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#22 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#23 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#24 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(651): Illuminate\\Container\\BoundMethod::call()
+#25 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(184): Illuminate\\Container\\Container->call()
+#26 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(193): Illuminate\\Database\\Seeder->Illuminate\\Database\\{closure}()
+#27 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Console/Seeds/SeedCommand.php(81): Illuminate\\Database\\Seeder->__invoke()
+#28 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/GuardsAttributes.php(155): Illuminate\\Database\\Console\\Seeds\\SeedCommand->Illuminate\\Database\\Console\\Seeds\\{closure}()
+#29 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Console/Seeds/SeedCommand.php(82): Illuminate\\Database\\Eloquent\\Model::unguarded()
+#30 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Database\\Console\\Seeds\\SeedCommand->handle()
+#31 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#32 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#33 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#34 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(651): Illuminate\\Container\\BoundMethod::call()
+#35 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Console/Command.php(182): Illuminate\\Container\\Container->call()
+#36 /home/fk59ix5w/public_html/vendor/symfony/console/Command/Command.php(291): Illuminate\\Console\\Command->execute()
+#37 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Console/Command.php(152): Symfony\\Component\\Console\\Command\\Command->run()
+#38 /home/fk59ix5w/public_html/vendor/symfony/console/Application.php(1014): Illuminate\\Console\\Command->run()
+#39 /home/fk59ix5w/public_html/vendor/symfony/console/Application.php(301): Symfony\\Component\\Console\\Application->doRunCommand()
+#40 /home/fk59ix5w/public_html/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun()
+#41 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run()
+#42 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Console/Application.php(194): Illuminate\\Console\\Application->run()
+#43 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(336): Illuminate\\Console\\Application->call()
+#44 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(338): Illuminate\\Foundation\\Console\\Kernel->call()
+#45 /home/fk59ix5w/public_html/modules/Theme/Abstracts/AbstractThemeProvider.php(67): Illuminate\\Support\\Facades\\Facade::__callStatic()
+#46 /home/fk59ix5w/public_html/modules/Theme/Admin/ThemeController.php(74): Modules\\Theme\\Abstracts\\AbstractThemeProvider::runSeeder()
+#47 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): Modules\\Theme\\Admin\\ThemeController->seeding()
+#48 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction()
+#49 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#50 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(205): Illuminate\\Routing\\Route->runController()
+#51 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(798): Illuminate\\Routing\\Route->run()
+#52 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#53 /home/fk59ix5w/public_html/app/Http/Middleware/Dashboard.php(25): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#54 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\Dashboard->handle()
+#55 /home/fk59ix5w/public_html/app/Http/Middleware/RequireChangePassword.php(41): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#56 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\RequireChangePassword->handle()
+#57 /home/fk59ix5w/public_html/app/Http/Middleware/SetLanguageForAdmin.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#58 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\SetLanguageForAdmin->handle()
+#59 /home/fk59ix5w/public_html/app/Http/Middleware/SetCurrentCurrency.php(48): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#60 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\SetCurrentCurrency->handle()
+#61 /home/fk59ix5w/public_html/app/Http/Middleware/HideDebugbar.php(32): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#62 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\HideDebugbar->handle()
+#63 /home/fk59ix5w/public_html/app/Http/Middleware/RedirectForMultiLanguage.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#64 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\RedirectForMultiLanguage->handle()
+#65 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#66 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#67 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#68 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle()
+#69 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#70 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle()
+#71 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#72 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest()
+#73 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle()
+#74 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#75 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle()
+#76 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#77 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle()
+#78 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#79 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(799): Illuminate\\Pipeline\\Pipeline->then()
+#80 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack()
+#81 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(740): Illuminate\\Routing\\Router->runRoute()
+#82 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute()
+#83 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(190): Illuminate\\Routing\\Router->dispatch()
+#84 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#85 /home/fk59ix5w/public_html/themes/Base/Core/Middleware/RunUpdater.php(72): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#86 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Themes\\Base\\Core\\Middleware\\RunUpdater->handle()
+#87 /home/fk59ix5w/public_html/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(59): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#88 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle()
+#89 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#90 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#91 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#92 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#93 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#94 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#95 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#96 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#97 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#98 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#99 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#100 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#101 /home/fk59ix5w/public_html/app/Http/Middleware/RedirectToInstaller.php(40): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#102 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\RedirectToInstaller->handle()
+#103 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#104 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#105 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#106 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then()
+#107 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#108 /home/fk59ix5w/public_html/public/index.php(72): Illuminate\\Foundation\\Http\\Kernel->handle()
+#109 {main}
+
+[previous exception] [object] (PDOException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'vip' for key 'bravo_seat_type_code_unique' at /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:545)
+[stacktrace]
+#0 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(545): PDOStatement->execute()
+#1 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(753): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}()
+#2 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(720): Illuminate\\Database\\Connection->runQueryCallback()
+#3 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(546): Illuminate\\Database\\Connection->run()
+#4 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(498): Illuminate\\Database\\Connection->statement()
+#5 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/Processor.php(32): Illuminate\\Database\\Connection->insert()
+#6 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(3270): Illuminate\\Database\\Query\\Processors\\Processor->processInsertGetId()
+#7 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(1861): Illuminate\\Database\\Query\\Builder->insertGetId()
+#8 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1322): Illuminate\\Database\\Eloquent\\Builder->__call()
+#9 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1287): Illuminate\\Database\\Eloquent\\Model->insertAndSetId()
+#10 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1128): Illuminate\\Database\\Eloquent\\Model->performInsert()
+#11 /home/fk59ix5w/public_html/app/BaseModel.php(60): Illuminate\\Database\\Eloquent\\Model->save()
+#12 /home/fk59ix5w/public_html/database/seeders/FlightSeeder.php(104): App\\BaseModel->save()
+#13 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Database\\Seeders\\FlightSeeder->run()
+#14 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#15 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#16 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#17 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(651): Illuminate\\Container\\BoundMethod::call()
+#18 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(184): Illuminate\\Container\\Container->call()
+#19 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(193): Illuminate\\Database\\Seeder->Illuminate\\Database\\{closure}()
+#20 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(61): Illuminate\\Database\\Seeder->__invoke()
+#21 /home/fk59ix5w/public_html/themes/Mytravel/Database/Seeders/DatabaseSeeder.php(34): Illuminate\\Database\\Seeder->call()
+#22 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Themes\\Mytravel\\Database\\Seeders\\DatabaseSeeder->run()
+#23 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#24 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#25 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#26 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(651): Illuminate\\Container\\BoundMethod::call()
+#27 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(184): Illuminate\\Container\\Container->call()
+#28 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(193): Illuminate\\Database\\Seeder->Illuminate\\Database\\{closure}()
+#29 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Console/Seeds/SeedCommand.php(81): Illuminate\\Database\\Seeder->__invoke()
+#30 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/GuardsAttributes.php(155): Illuminate\\Database\\Console\\Seeds\\SeedCommand->Illuminate\\Database\\Console\\Seeds\\{closure}()
+#31 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Database/Console/Seeds/SeedCommand.php(82): Illuminate\\Database\\Eloquent\\Model::unguarded()
+#32 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Database\\Console\\Seeds\\SeedCommand->handle()
+#33 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#34 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#35 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#36 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(651): Illuminate\\Container\\BoundMethod::call()
+#37 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Console/Command.php(182): Illuminate\\Container\\Container->call()
+#38 /home/fk59ix5w/public_html/vendor/symfony/console/Command/Command.php(291): Illuminate\\Console\\Command->execute()
+#39 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Console/Command.php(152): Symfony\\Component\\Console\\Command\\Command->run()
+#40 /home/fk59ix5w/public_html/vendor/symfony/console/Application.php(1014): Illuminate\\Console\\Command->run()
+#41 /home/fk59ix5w/public_html/vendor/symfony/console/Application.php(301): Symfony\\Component\\Console\\Application->doRunCommand()
+#42 /home/fk59ix5w/public_html/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun()
+#43 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run()
+#44 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Console/Application.php(194): Illuminate\\Console\\Application->run()
+#45 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(336): Illuminate\\Console\\Application->call()
+#46 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(338): Illuminate\\Foundation\\Console\\Kernel->call()
+#47 /home/fk59ix5w/public_html/modules/Theme/Abstracts/AbstractThemeProvider.php(67): Illuminate\\Support\\Facades\\Facade::__callStatic()
+#48 /home/fk59ix5w/public_html/modules/Theme/Admin/ThemeController.php(74): Modules\\Theme\\Abstracts\\AbstractThemeProvider::runSeeder()
+#49 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): Modules\\Theme\\Admin\\ThemeController->seeding()
+#50 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction()
+#51 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#52 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(205): Illuminate\\Routing\\Route->runController()
+#53 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(798): Illuminate\\Routing\\Route->run()
+#54 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#55 /home/fk59ix5w/public_html/app/Http/Middleware/Dashboard.php(25): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#56 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\Dashboard->handle()
+#57 /home/fk59ix5w/public_html/app/Http/Middleware/RequireChangePassword.php(41): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#58 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\RequireChangePassword->handle()
+#59 /home/fk59ix5w/public_html/app/Http/Middleware/SetLanguageForAdmin.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#60 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\SetLanguageForAdmin->handle()
+#61 /home/fk59ix5w/public_html/app/Http/Middleware/SetCurrentCurrency.php(48): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#62 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\SetCurrentCurrency->handle()
+#63 /home/fk59ix5w/public_html/app/Http/Middleware/HideDebugbar.php(32): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#64 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\HideDebugbar->handle()
+#65 /home/fk59ix5w/public_html/app/Http/Middleware/RedirectForMultiLanguage.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#66 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\RedirectForMultiLanguage->handle()
+#67 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#68 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#69 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#70 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle()
+#71 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#72 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle()
+#73 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#74 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest()
+#75 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle()
+#76 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#77 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle()
+#78 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#79 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle()
+#80 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#81 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(799): Illuminate\\Pipeline\\Pipeline->then()
+#82 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack()
+#83 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(740): Illuminate\\Routing\\Router->runRoute()
+#84 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute()
+#85 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(190): Illuminate\\Routing\\Router->dispatch()
+#86 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#87 /home/fk59ix5w/public_html/themes/Base/Core/Middleware/RunUpdater.php(72): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#88 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Themes\\Base\\Core\\Middleware\\RunUpdater->handle()
+#89 /home/fk59ix5w/public_html/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(59): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#90 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle()
+#91 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#92 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#93 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#94 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#95 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#96 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#97 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#98 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#99 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#100 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#101 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#102 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#103 /home/fk59ix5w/public_html/app/Http/Middleware/RedirectToInstaller.php(40): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#104 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\RedirectToInstaller->handle()
+#105 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#106 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#107 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#108 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then()
+#109 /home/fk59ix5w/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#110 /home/fk59ix5w/public_html/public/index.php(72): Illuminate\\Foundation\\Http\\Kernel->handle()
+#111 {main}
+"} 
+[2023-02-25 16:45:58] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "The May Fair Hotel has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/hotel?id=22",
+    "idNotification": "82b05d9c-67f0-44d9-875a-977674f6356a",
+    "socket": null
+}  
+[2023-02-25 16:45:58] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Dylan Hotel has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/hotel?id=21",
+    "idNotification": "f88fefb6-702a-419d-8e92-246e0406e279",
+    "socket": null
+}  
+[2023-02-25 16:45:58] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Parian Holiday Villas has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/hotel?id=20",
+    "idNotification": "1a06bf90-42f5-4bc1-9221-17a651587363",
+    "socket": null
+}  
+[2023-02-25 16:45:58] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Stewart Hotel has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/hotel?id=19",
+    "idNotification": "d7da3da1-ec55-45f4-b2fe-e1206eab09a1",
+    "socket": null
+}  
+[2023-02-25 16:45:58] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Crowne Plaza Hotel has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/hotel?id=18",
+    "idNotification": "3ed2dcd4-ca94-4392-b6ad-060cfa96b764",
+    "socket": null
+}  
+[2023-02-25 16:45:58] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "EnVision Hotel Boston has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/hotel?id=17",
+    "idNotification": "efd9de28-1627-4ddb-9bfc-80e775afdc21",
+    "socket": null
+}  
+[2023-02-25 16:45:58] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Studio Allston Hotel has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/hotel?id=16",
+    "idNotification": "58593554-92b8-4e34-860e-cbdb3534791e",
+    "socket": null
+}  
+[2023-02-25 16:45:58] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Redac Gateway Hotel has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/hotel?id=15",
+    "idNotification": "c74b5b9e-d991-4608-8d30-c0eb1455c162",
+    "socket": null
+}  
+[2023-02-25 16:45:58] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Castello Casole Hotel has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/hotel?id=14",
+    "idNotification": "700ab48a-b688-45f0-9760-5a215e0af675",
+    "socket": null
+}  
+[2023-02-25 16:46:10] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Hotel WBF Hommachi has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/hotel?id=13",
+    "idNotification": "ab36ba4a-8a55-4b2a-aedf-80362ea646e7",
+    "socket": null
+}  
+[2023-02-25 16:46:10] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Hotel Stanford has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/hotel?id=12",
+    "idNotification": "c517380e-fd25-48b6-83d2-be955e26ea6d",
+    "socket": null
+}  
+[2023-02-25 16:47:26] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "River Cruise Tour on the Seine has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=32",
+    "idNotification": "b6724628-ca73-4a58-960f-dd496126fc15",
+    "socket": null
+}  
+[2023-02-25 16:47:26] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Cannes and Antibes Night Tour has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=31",
+    "idNotification": "e3f0f471-35f0-496a-9160-b09df5dca65b",
+    "socket": null
+}  
+[2023-02-25 16:47:26] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Cannes and Antibes Night Tour has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/tour?id=31",
+    "idNotification": "c98e89aa-edfb-41f0-9120-741eb44af8ec",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 16:47:26] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "San Francisco Express Never Ceases has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=30",
+    "idNotification": "99adf0ac-6b98-4b22-a0b2-46d88304fa44",
+    "socket": null
+}  
+[2023-02-25 16:47:26] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Hollywood Sign Small Group Tour in Luxury Van has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=29",
+    "idNotification": "fbb536c0-d634-494b-8258-a8994f0da12c",
+    "socket": null
+}  
+[2023-02-25 16:47:26] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Hollywood Sign Small Group Tour in Luxury Van has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/tour?id=29",
+    "idNotification": "1604ba92-0775-405d-8216-00f6ab0dab8f",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 16:47:42] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Segway Tour of Washington, D.C. Highlights has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=28",
+    "idNotification": "50706a07-1a45-4342-9f2a-12fd839954f3",
+    "socket": null
+}  
+[2023-02-25 16:47:42] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Trip of New York \u2013 Discover America has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=27",
+    "idNotification": "19524ef6-ca83-4c5f-a19c-10b83c5035f5",
+    "socket": null
+}  
+[2023-02-25 16:47:42] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Trip of New York \u2013 Discover America has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/tour?id=27",
+    "idNotification": "9a3bad9f-6671-48f8-80f0-19303f27d0af",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 16:47:42] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Giverny and Versailles Small Group Day Trip has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=26",
+    "idNotification": "78be93b9-61fb-4cd5-a596-1384b259479b",
+    "socket": null
+}  
+[2023-02-25 16:47:42] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Giverny and Versailles Small Group Day Trip has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/tour?id=26",
+    "idNotification": "5c1bc6b7-2c42-4fea-b577-a5e1647020ec",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 16:47:42] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Tastes and Sounds of the South 2019 has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=25",
+    "idNotification": "cf3d8a9f-f22c-40de-8e51-a80e432f3fc3",
+    "socket": null
+}  
+[2023-02-25 16:47:42] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Tastes and Sounds of the South 2019 has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/tour?id=25",
+    "idNotification": "8e904dc4-3c19-42f8-890c-0a4662ca3258",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 16:48:01] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Pure Luxe in Punta Mita has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=24",
+    "idNotification": "595e46b9-27bf-4e70-a5fc-6a0b0b9c93b8",
+    "socket": null
+}  
+[2023-02-25 16:48:01] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Pure Luxe in Punta Mita has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/tour?id=24",
+    "idNotification": "01d28b17-13ea-4dd0-b6d4-a84015ab518c",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 16:48:01] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Eastern Discovery has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=23",
+    "idNotification": "6576726b-be3c-4d1b-8fb8-d626c3c85344",
+    "socket": null
+}  
+[2023-02-25 16:48:01] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Eastern Discovery has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/tour?id=23",
+    "idNotification": "e8f7cf59-6662-4f19-9765-c11bf4bcc345",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 16:48:01] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Eastern Discovery (Start New Orleans) has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=22",
+    "idNotification": "85774c65-5323-4630-92f3-54d7028eea59",
+    "socket": null
+}  
+[2023-02-25 16:48:01] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Eastern Discovery (Start New Orleans) has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/tour?id=22",
+    "idNotification": "7d10fad2-1855-4378-90f0-721f2215bb61",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 16:48:01] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Southwest States (Ex Los Angeles)  has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=21",
+    "idNotification": "ccbce58d-c346-4b02-9015-ea815efb6c92",
+    "socket": null
+}  
+[2023-02-25 16:48:01] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Southwest States (Ex Los Angeles)  has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/tour?id=21",
+    "idNotification": "39555fa2-709a-46de-852f-290ec7b31e39",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 16:48:16] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Paris Vacation Travel  has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=20",
+    "idNotification": "694b5f9d-0c91-441d-9d3e-d0ae4f24c02f",
+    "socket": null
+}  
+[2023-02-25 16:48:16] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Los Angeles to San Francisco Express  has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=19",
+    "idNotification": "3aab9f15-c00b-41c2-ba1d-21e01b0aa360",
+    "socket": null
+}  
+[2023-02-25 16:48:16] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Los Angeles to San Francisco Express  has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/tour?id=19",
+    "idNotification": "3c8788ad-e488-444b-a5a9-929b3e374aac",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 16:48:16] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "New York: Museum of Modern Art has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=18",
+    "idNotification": "1698b4e7-deb1-4661-aade-88903f2854d3",
+    "socket": null
+}  
+[2023-02-25 16:48:16] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "American Parks Trail end Rapid City has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=17",
+    "idNotification": "4bafbcfc-73d9-44f2-bad1-57e8d7f2e291",
+    "socket": null
+}  
+[2023-02-25 16:48:30] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "River Cruise Tour on the Seine has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=16",
+    "idNotification": "37c8b63b-dd73-4ffb-915e-a3aee8072004",
+    "socket": null
+}  
+[2023-02-25 16:48:30] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Cannes and Antibes Night Tour has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=15",
+    "idNotification": "6cffa2c7-8bba-4b16-a26f-bfa7cfe00676",
+    "socket": null
+}  
+[2023-02-25 16:48:30] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Cannes and Antibes Night Tour has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/tour?id=15",
+    "idNotification": "a16616f8-61f4-4bce-8f42-8d81edb4c4c4",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 16:48:30] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "San Francisco Express Never Ceases has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=14",
+    "idNotification": "77a9d05e-1656-4fe8-9c47-322178924057",
+    "socket": null
+}  
+[2023-02-25 16:48:30] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Hollywood Sign Small Group Tour in Luxury Van has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=13",
+    "idNotification": "2ba75e62-baa9-45db-80c3-75fa16c3dccc",
+    "socket": null
+}  
+[2023-02-25 16:48:30] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Hollywood Sign Small Group Tour in Luxury Van has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/tour?id=13",
+    "idNotification": "26417a93-95fb-40ee-8c58-5b81e50a8bf2",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 16:48:42] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Segway Tour of Washington, D.C. Highlights has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=12",
+    "idNotification": "10767942-a891-4ce6-b025-ca416d92cdce",
+    "socket": null
+}  
+[2023-02-25 16:48:42] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Trip of New York \u2013 Discover America has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=11",
+    "idNotification": "7e4c04f0-afbb-46bd-8c08-512f0a2c641b",
+    "socket": null
+}  
+[2023-02-25 16:48:43] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Trip of New York \u2013 Discover America has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/tour?id=11",
+    "idNotification": "99baf02b-537c-4327-bd49-7c2a0b9798f8",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 16:48:43] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Giverny and Versailles Small Group Day Trip has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=10",
+    "idNotification": "a5320cac-56da-46f6-8274-8a15720c1a4e",
+    "socket": null
+}  
+[2023-02-25 16:48:43] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Giverny and Versailles Small Group Day Trip has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/tour?id=10",
+    "idNotification": "d85a4ee3-1bf8-4700-8130-84d3d54ce28b",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 16:48:43] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Tastes and Sounds of the South 2019 has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=9",
+    "idNotification": "b1aee6eb-d1a8-4245-95d5-db5303561e4a",
+    "socket": null
+}  
+[2023-02-25 16:48:43] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Tastes and Sounds of the South 2019 has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/tour?id=9",
+    "idNotification": "a72f0be0-aeeb-48ba-a4b7-4da1c474ca9a",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 16:48:54] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Paris Vacation Travel  has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=4",
+    "idNotification": "8973b04d-adfe-4314-af8d-bc2543adcaa1",
+    "socket": null
+}  
+[2023-02-25 16:48:55] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Los Angeles to San Francisco Express  has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=3",
+    "idNotification": "25ce1a04-9d4a-4b2b-ba80-e70f83bc0319",
+    "socket": null
+}  
+[2023-02-25 16:48:55] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Los Angeles to San Francisco Express  has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/tour?id=3",
+    "idNotification": "8d82660f-e1ec-48b5-9bb6-db5784324773",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 16:48:55] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "New York: Museum of Modern Art has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=2",
+    "idNotification": "7f76b6c2-ab77-4266-a1a3-3338aa877e03",
+    "socket": null
+}  
+[2023-02-25 16:48:55] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "American Parks Trail end Rapid City has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=1",
+    "idNotification": "953a94f8-c0ab-43f3-a2f5-cd38f805e59b",
+    "socket": null
+}  
+[2023-02-25 16:49:11] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Pure Luxe in Punta Mita has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=8",
+    "idNotification": "b0f2efa7-b91d-4fc1-96e8-bc12be161b8b",
+    "socket": null
+}  
+[2023-02-25 16:49:11] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Pure Luxe in Punta Mita has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/tour?id=8",
+    "idNotification": "b32aeb95-6377-4957-9bfa-3fc46c93faab",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 16:49:11] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Eastern Discovery has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=7",
+    "idNotification": "ad63b3ac-35d2-4453-9100-64169e2fd435",
+    "socket": null
+}  
+[2023-02-25 16:49:11] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Eastern Discovery has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/tour?id=7",
+    "idNotification": "6444b92a-28d9-47e7-b009-66ac12191e55",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 16:49:11] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Eastern Discovery (Start New Orleans) has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=6",
+    "idNotification": "74031528-1261-4e78-a18b-28b414bca593",
+    "socket": null
+}  
+[2023-02-25 16:49:11] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Eastern Discovery (Start New Orleans) has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/tour?id=6",
+    "idNotification": "8edbc432-7c91-44f4-b4c7-e3c1271c7450",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 16:49:11] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Southwest States (Ex Los Angeles)  has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=5",
+    "idNotification": "d7f74baf-3378-4db6-b1eb-63f3df5f7e09",
+    "socket": null
+}  
+[2023-02-25 16:49:11] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Southwest States (Ex Los Angeles)  has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/tour?id=5",
+    "idNotification": "cfe8d735-d0f0-4ec8-a7dc-6dcc144cfe64",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 16:49:56] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "STAY GREENWICH VILLAGE has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/space?id=11",
+    "idNotification": "d1905cea-4808-4b37-8253-306e320a106a",
+    "socket": null
+}  
+[2023-02-25 16:49:56] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "LILY DALE VILLAGE has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/space?id=10",
+    "idNotification": "866b0bc7-34f6-40b7-a01c-fe34edd3fb32",
+    "socket": null
+}  
+[2023-02-25 16:49:56] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "LUXURY SINGLE has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/space?id=9",
+    "idNotification": "cbfa6ff0-1981-4cb9-b0c9-622448351d5f",
+    "socket": null
+}  
+[2023-02-25 16:49:56] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "PARIS GREENWICH VILLA has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/space?id=8",
+    "idNotification": "5b58765d-4eda-414c-9497-265f86e9e97e",
+    "socket": null
+}  
+[2023-02-25 16:49:56] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "EAST VILLAGE has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/space?id=7",
+    "idNotification": "0a381ad9-6019-4f93-bf45-9cac779be35d",
+    "socket": null
+}  
+[2023-02-25 16:49:56] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "THE MEATPACKING SUITES has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/space?id=6",
+    "idNotification": "a46f4ce3-fcfd-45d8-a99d-2c842e468ad4",
+    "socket": null
+}  
+[2023-02-25 16:49:56] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "DUPLEX GREENWICH has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/space?id=5",
+    "idNotification": "2142c98c-0aa6-482c-8955-7c3c15cdd931",
+    "socket": null
+}  
+[2023-02-25 16:49:56] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "BEST OF WEST VILLAGE has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/space?id=4",
+    "idNotification": "ee407d1e-d246-4557-9a7c-504675354c61",
+    "socket": null
+}  
+[2023-02-25 16:49:56] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "BEAUTIFUL LOFT has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/space?id=3",
+    "idNotification": "a0eaf1ec-cd80-452a-9bed-bd2b1b1fd583",
+    "socket": null
+}  
+[2023-02-25 16:49:56] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "LUXURY APARTMENT has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/space?id=2",
+    "idNotification": "60611953-67fc-413c-aab8-5fa02de267ef",
+    "socket": null
+}  
+[2023-02-25 16:49:56] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "LUXURY STUDIO has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/space?id=1",
+    "idNotification": "472706e7-36e0-442f-9fd6-c6d6ba976cdd",
+    "socket": null
+}  
+[2023-02-25 16:50:18] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "LUXURY APARTMENT has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/space?id=13",
+    "idNotification": "c828b85b-8fcb-436b-a531-5c48dcb0283b",
+    "socket": null
+}  
+[2023-02-25 16:50:18] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "LUXURY STUDIO has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/space?id=12",
+    "idNotification": "b12b9f82-54b9-414a-8cf9-17eb492fb2f3",
+    "socket": null
+}  
+[2023-02-25 16:51:20] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Vinfast Fadil Standard has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/car?id=39",
+    "idNotification": "c6cda562-b5f7-4f1e-b9af-2df3c40569d7",
+    "socket": null
+}  
+[2023-02-25 16:51:20] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Vinfast Fadil Standard has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/car?id=39",
+    "idNotification": "dbc482d5-0bc6-400b-be19-22343da23ad3",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 16:51:20] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Vinfast Lux A2.0 Plus has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/car?id=38",
+    "idNotification": "22f41907-392f-4bd6-833c-52c528ad63e0",
+    "socket": null
+}  
+[2023-02-25 16:51:20] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Vinfast Lux A2.0 Plus has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/car?id=38",
+    "idNotification": "bcef81d1-6392-4bc6-9f21-74bfc769edcd",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 16:51:20] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Vinfast Lux V8 (SUV) has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/car?id=37",
+    "idNotification": "231dbc83-8dcc-44e4-b304-c15d21136651",
+    "socket": null
+}  
+[2023-02-25 16:51:20] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Vinfast Lux V8 (SUV) has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/car?id=37",
+    "idNotification": "956fe49c-7f5f-40a9-8c01-b8e4e5e752c2",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 16:51:20] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Toyota Prius Plus has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/car?id=36",
+    "idNotification": "b3dbc204-7f91-4cbf-9e00-a7acfe69b1fb",
+    "socket": null
+}  
+[2023-02-25 16:51:21] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Toyota Prius Plus has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/car?id=36",
+    "idNotification": "1edb79d0-e226-47a2-8d55-6b1ac4d9cf29",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 16:51:21] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Honda Civic has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/car?id=35",
+    "idNotification": "5feb00ea-78b4-489e-8e21-62f729b1fd1d",
+    "socket": null
+}  
+[2023-02-25 16:51:21] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Honda Civic has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/car?id=35",
+    "idNotification": "d8bcde03-2f15-47e3-ac88-2cd8178d4920",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 16:51:21] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Vinfast Lux SA2.0 Plus has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/car?id=34",
+    "idNotification": "f0938a3a-ff55-4ece-8dc4-226b380059b8",
+    "socket": null
+}  
+[2023-02-25 16:51:21] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Vinfast Lux SA2.0 Plus has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/car?id=34",
+    "idNotification": "df333989-d0cf-488e-9f60-1df7c1e59db9",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 16:51:21] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Mercedes Benz has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/car?id=33",
+    "idNotification": "57f1b9df-7362-410f-a675-5e80aba3dc1f",
+    "socket": null
+}  
+[2023-02-25 16:51:21] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Mercedes Benz has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/car?id=33",
+    "idNotification": "e42e8c72-508d-4877-8986-f7fe4c4cd8a4",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 16:51:21] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Vinfast Fadil Plus has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/car?id=32",
+    "idNotification": "21920372-1528-4428-950e-fe5c45269734",
+    "socket": null
+}  
+[2023-02-25 16:51:21] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Vinfast Fadil Plus has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/car?id=32",
+    "idNotification": "5f557a40-ce1f-4053-b907-57b8818c9859",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 16:51:21] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "2019 Audi S3 has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/car?id=31",
+    "idNotification": "e6b4e414-c96d-4b1e-98e0-938d58a2c205",
+    "socket": null
+}  
+[2023-02-25 16:51:21] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "2019 BMW M6 Gran Coupe has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/car?id=30",
+    "idNotification": "78bcb203-6ca6-4da6-aa56-3393d7881d5e",
+    "socket": null
+}  
+[2023-02-25 16:51:21] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "2019 Honda Clarity has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/car?id=29",
+    "idNotification": "132e1d38-cdef-4ee3-a1a6-d768320e142d",
+    "socket": null
+}  
+[2023-02-25 16:51:21] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "2019 Honda Clarity has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/car?id=28",
+    "idNotification": "bfc18f90-32c7-41d6-b448-3ca54e69c5a1",
+    "socket": null
+}  
+[2023-02-25 16:51:21] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "BMW-X6-facelift has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/car?id=27",
+    "idNotification": "9c728f39-b1a7-4d4c-b48d-24d4a8f142ad",
+    "socket": null
+}  
+[2023-02-25 16:51:31] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Vinfast Fadil Standard has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/car?id=26",
+    "idNotification": "3666cc26-5b72-4f5a-92a9-d724b71cf28c",
+    "socket": null
+}  
+[2023-02-25 16:51:31] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Vinfast Fadil Standard has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/car?id=26",
+    "idNotification": "819b4ef9-e05b-4be2-bae3-e3b006131428",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 16:51:59] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Vinfast Fadil Standard has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/car?id=13",
+    "idNotification": "ddf7e547-0bf3-4a4b-8e67-6ef91bb55ade",
+    "socket": null
+}  
+[2023-02-25 16:51:59] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Vinfast Fadil Standard has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/car?id=13",
+    "idNotification": "2b54a078-8d94-44e7-bd46-e94aab14cd26",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 16:51:59] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Vinfast Lux A2.0 Plus has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/car?id=12",
+    "idNotification": "7922a8f7-cbeb-4c74-944d-645840ec33df",
+    "socket": null
+}  
+[2023-02-25 16:51:59] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Vinfast Lux A2.0 Plus has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/car?id=12",
+    "idNotification": "22fbfbae-a860-4246-b53a-aee4591e0c28",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 16:51:59] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Vinfast Lux V8 (SUV) has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/car?id=11",
+    "idNotification": "13dea072-fcbb-4e48-88a4-65701a0b8f2f",
+    "socket": null
+}  
+[2023-02-25 16:51:59] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Vinfast Lux V8 (SUV) has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/car?id=11",
+    "idNotification": "b90addc4-5bf8-4b93-b718-1b79fc058adf",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 16:51:59] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Toyota Prius Plus has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/car?id=10",
+    "idNotification": "eae150e6-737c-4b82-be09-c567471915d7",
+    "socket": null
+}  
+[2023-02-25 16:51:59] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Toyota Prius Plus has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/car?id=10",
+    "idNotification": "f4fa5bd8-f7c6-4dc8-bffc-b0e10e8346ad",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 16:51:59] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Honda Civic has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/car?id=9",
+    "idNotification": "382d1de7-88ba-44b4-84dd-66183d835f21",
+    "socket": null
+}  
+[2023-02-25 16:51:59] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Honda Civic has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/car?id=9",
+    "idNotification": "3a010215-cbe6-47e4-a0e4-fdfa883dfa25",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 16:51:59] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Vinfast Lux SA2.0 Plus has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/car?id=8",
+    "idNotification": "8307fae3-81fc-4f22-b296-d0d617f3d2bb",
+    "socket": null
+}  
+[2023-02-25 16:51:59] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Vinfast Lux SA2.0 Plus has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/car?id=8",
+    "idNotification": "52212e38-2738-4945-adfb-5889e65437c4",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 16:51:59] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Mercedes Benz has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/car?id=7",
+    "idNotification": "bd5a5b08-331f-410e-a8cb-9b089c87867c",
+    "socket": null
+}  
+[2023-02-25 16:51:59] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Mercedes Benz has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/car?id=7",
+    "idNotification": "255705ee-17e4-411e-9dd3-569e45ec79fa",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 16:51:59] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Vinfast Fadil Plus has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/car?id=6",
+    "idNotification": "31c4560a-cb13-4bc9-aae4-38a1512014ed",
+    "socket": null
+}  
+[2023-02-25 16:51:59] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Vinfast Fadil Plus has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/car?id=6",
+    "idNotification": "3d3c2117-7167-4421-8734-271598a183c0",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 16:52:14] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "2019 BMW M6 Gran Coupe has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/car?id=4",
+    "idNotification": "31d33729-4a2f-4ffb-874e-74cb883b3909",
+    "socket": null
+}  
+[2023-02-25 16:52:14] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "2019 Honda Clarity has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/car?id=3",
+    "idNotification": "f08fda1c-f77c-457f-bde3-bff704e35f7b",
+    "socket": null
+}  
+[2023-02-25 16:52:14] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "2019 Honda Clarity has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/car?id=2",
+    "idNotification": "cc4ec192-1bb5-4b25-bc0d-755a3579da26",
+    "socket": null
+}  
+[2023-02-25 16:52:14] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "BMW-X6-facelift has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/car?id=1",
+    "idNotification": "dd656ca4-b1cd-46c3-96c2-93a06836e913",
+    "socket": null
+}  
+[2023-02-25 16:52:46] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Event of Washington, D.C. Highlights has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/event?id=36",
+    "idNotification": "9b96cde5-2ff3-4dad-a8e9-33e682e8180a",
+    "socket": null
+}  
+[2023-02-25 16:52:46] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "New York \u2013 Discover America has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/event?id=35",
+    "idNotification": "c9c61bfd-c546-47dc-b2e7-647af3da6421",
+    "socket": null
+}  
+[2023-02-25 16:52:46] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Origami Crane Wedding Planners has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/event?id=34",
+    "idNotification": "2c4353ef-fa24-4f2d-b8ed-d3c22ab4c7ff",
+    "socket": null
+}  
+[2023-02-25 16:52:46] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Northern Lights Event Planners has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/event?id=33",
+    "idNotification": "5f3bac2b-651a-446b-8568-bba0142c25c2",
+    "socket": null
+}  
+[2023-02-25 16:52:46] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Pink Crescent Moon Events has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/event?id=32",
+    "idNotification": "8740c803-5462-498a-9df1-5e5314cff3a6",
+    "socket": null
+}  
+[2023-02-25 16:52:46] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Eastern Discovery has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/event?id=31",
+    "idNotification": "97f976b5-7be0-41cb-8090-27060287b057",
+    "socket": null
+}  
+[2023-02-25 16:52:46] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Spanish Moss Event Design has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/event?id=30",
+    "idNotification": "d09f8b2e-35bf-42c6-b93b-6a19d13e8403",
+    "socket": null
+}  
+[2023-02-25 16:52:46] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Southwest States (Ex Los Angeles)  has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/event?id=29",
+    "idNotification": "ef4c267c-7da6-4a9d-a26b-dbbaf844a4f0",
+    "socket": null
+}  
+[2023-02-25 16:52:46] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Aspen Glade Weddings & Events has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/event?id=28",
+    "idNotification": "b5e7e2f8-428d-4d97-a92e-30162c037249",
+    "socket": null
+}  
+[2023-02-25 16:52:46] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Bamboo Grove Event Planning has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/event?id=27",
+    "idNotification": "c4f20e0b-6946-4884-8c0b-295366d4b375",
+    "socket": null
+}  
+[2023-02-25 16:52:46] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Painted Desert Event Designs has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/event?id=26",
+    "idNotification": "e30e5bc2-d1f9-41fa-ae78-ba87dd9cb425",
+    "socket": null
+}  
+[2023-02-25 16:52:46] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Andante & Allegro Event Design has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/event?id=25",
+    "idNotification": "fd697c87-4c82-4c77-8e4a-77bea0dadd53",
+    "socket": null
+}  
+[2023-02-25 16:53:06] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Event of Washington, D.C. Highlights has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/event?id=24",
+    "idNotification": "bc0beabe-1152-417c-aef9-dc38e5b90403",
+    "socket": null
+}  
+[2023-02-25 16:53:06] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "New York \u2013 Discover America has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/event?id=23",
+    "idNotification": "54519cd8-ad27-4160-866c-076457d10e4f",
+    "socket": null
+}  
+[2023-02-25 16:53:06] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Origami Crane Wedding Planners has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/event?id=22",
+    "idNotification": "f8ae4509-25ad-423d-a24d-7c7f99016202",
+    "socket": null
+}  
+[2023-02-25 16:53:06] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Northern Lights Event Planners has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/event?id=21",
+    "idNotification": "8b101047-7caa-4133-b496-b26fa073a819",
+    "socket": null
+}  
+[2023-02-25 16:53:06] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Pink Crescent Moon Events has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/event?id=20",
+    "idNotification": "125b16ba-eaf2-455e-8b93-1aa5d4192468",
+    "socket": null
+}  
+[2023-02-25 16:53:06] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Eastern Discovery has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/event?id=19",
+    "idNotification": "909f97f8-88d6-4eff-9128-cc764a700fdc",
+    "socket": null
+}  
+[2023-02-25 16:53:06] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Spanish Moss Event Design has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/event?id=18",
+    "idNotification": "494566ec-61c9-49eb-b29c-63aca5336273",
+    "socket": null
+}  
+[2023-02-25 16:53:06] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Southwest States (Ex Los Angeles)  has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/event?id=17",
+    "idNotification": "ca31bd24-e6ae-4f67-bf99-9ba186b1fda3",
+    "socket": null
+}  
+[2023-02-25 16:53:06] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Aspen Glade Weddings & Events has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/event?id=16",
+    "idNotification": "3212555b-1049-4b9e-935f-b39105f7fd0e",
+    "socket": null
+}  
+[2023-02-25 16:53:07] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Bamboo Grove Event Planning has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/event?id=15",
+    "idNotification": "73e01649-921c-4574-a8a2-6aafef471153",
+    "socket": null
+}  
+[2023-02-25 16:53:07] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Painted Desert Event Designs has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/event?id=14",
+    "idNotification": "f3a50cf1-1eb3-4739-9acf-2c1d6ac7c849",
+    "socket": null
+}  
+[2023-02-25 16:53:07] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Andante & Allegro Event Design has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/event?id=13",
+    "idNotification": "5127baf5-6aa3-45ef-8844-3938f24b0411",
+    "socket": null
+}  
+[2023-02-25 16:55:44] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "STAY GREENWICH VILLAGE has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/space?id=33",
+    "idNotification": "7f6b27ee-5835-4bd7-9d18-280ffcca26be",
+    "socket": null
+}  
+[2023-02-25 16:55:44] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "LILY DALE VILLAGE has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/space?id=32",
+    "idNotification": "01791303-b5f7-4065-906f-ef3e5849907f",
+    "socket": null
+}  
+[2023-02-25 16:55:44] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "LUXURY SINGLE has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/space?id=31",
+    "idNotification": "eb075e3e-2f65-4c59-aed0-2d64d54a24f0",
+    "socket": null
+}  
+[2023-02-25 16:55:44] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "PARIS GREENWICH VILLA has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/space?id=30",
+    "idNotification": "17b95c0c-b449-4903-b88d-3e5b681e16c2",
+    "socket": null
+}  
+[2023-02-25 16:55:44] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "EAST VILLAGE has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/space?id=29",
+    "idNotification": "f9922760-69a6-4901-821e-ca36dabc0e1d",
+    "socket": null
+}  
+[2023-02-25 16:55:44] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "THE MEATPACKING SUITES has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/space?id=28",
+    "idNotification": "612c991e-c243-4d57-bfd4-a80e85116fc7",
+    "socket": null
+}  
+[2023-02-25 16:55:44] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "DUPLEX GREENWICH has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/space?id=27",
+    "idNotification": "bbbffb71-abec-4560-923d-53ef79ca5fd1",
+    "socket": null
+}  
+[2023-02-25 16:55:44] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "BEST OF WEST VILLAGE has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/space?id=26",
+    "idNotification": "cfcc7678-8cdd-4ad7-8f3a-25bed3d93667",
+    "socket": null
+}  
+[2023-02-25 16:55:44] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "BEAUTIFUL LOFT has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/space?id=25",
+    "idNotification": "1ef1be02-9469-4c13-b645-153e1904284e",
+    "socket": null
+}  
+[2023-02-25 16:55:44] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "LUXURY APARTMENT has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/space?id=24",
+    "idNotification": "3a115744-96bb-43b8-b5a8-8efb87a0379d",
+    "socket": null
+}  
+[2023-02-25 16:55:44] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "LUXURY STUDIO has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/space?id=23",
+    "idNotification": "00f120a6-85f4-4056-8a07-1de085bf3157",
+    "socket": null
+}  
+[2023-02-25 16:56:43] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "2019 Audi S3 has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/car?id=5",
+    "idNotification": "fbc7841d-53d4-46ad-be2d-b39388917e5c",
+    "socket": null
+}  
+[2023-02-25 17:15:19] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "EnVision Hotel Boston has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/hotel?id=28",
+    "idNotification": "15505c97-4dfa-4b3f-904f-7d799f8f730c",
+    "socket": null
+}  
+[2023-02-25 17:15:19] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Studio Allston Hotel has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/hotel?id=27",
+    "idNotification": "0fb9af52-edca-4572-85e9-9f064e331263",
+    "socket": null
+}  
+[2023-02-25 17:15:19] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Redac Gateway Hotel has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/hotel?id=26",
+    "idNotification": "5f196041-e429-4fa8-aaa4-b79191830066",
+    "socket": null
+}  
+[2023-02-25 17:15:19] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Castello Casole Hotel has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/hotel?id=25",
+    "idNotification": "4956cd7e-e256-41a6-b9b8-888bffdce295",
+    "socket": null
+}  
+[2023-02-25 17:15:19] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Hotel WBF Hommachi has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/hotel?id=24",
+    "idNotification": "ac49eabf-3bcf-4669-bacf-99d79c7d7614",
+    "socket": null
+}  
+[2023-02-25 17:15:19] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Hotel Stanford has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/hotel?id=23",
+    "idNotification": "a2d7cba7-1bf8-4545-9878-1e7dc9b0381c",
+    "socket": null
+}  
+[2023-02-25 17:15:43] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Giverny and Versailles Small Group Day Trip has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=42",
+    "idNotification": "c400d1ff-39e6-4e41-b0ab-b9e75a625eb8",
+    "socket": null
+}  
+[2023-02-25 17:15:43] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Giverny and Versailles Small Group Day Trip has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/tour?id=42",
+    "idNotification": "678492eb-ebd9-45d0-b80f-c9eb12a1f745",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 17:15:43] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Tastes and Sounds of the South 2019 has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=41",
+    "idNotification": "fd44a2d1-92aa-4426-929d-b784a717cf5b",
+    "socket": null
+}  
+[2023-02-25 17:15:43] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Tastes and Sounds of the South 2019 has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/tour?id=41",
+    "idNotification": "075bf647-514c-479f-9924-e75c8909e201",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 17:15:43] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Pure Luxe in Punta Mita has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=40",
+    "idNotification": "13e9d791-f38a-45c8-ba28-5fc504633a54",
+    "socket": null
+}  
+[2023-02-25 17:15:43] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Pure Luxe in Punta Mita has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/tour?id=40",
+    "idNotification": "968da196-b476-4075-84d8-d550d6338f2e",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 17:15:43] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Eastern Discovery has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=39",
+    "idNotification": "23eb76ca-e167-4a39-8546-254a6df6eef5",
+    "socket": null
+}  
+[2023-02-25 17:15:43] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Eastern Discovery has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/tour?id=39",
+    "idNotification": "3896aed9-4d33-47ab-9ecc-5e73b47da78b",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 17:15:43] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Eastern Discovery (Start New Orleans) has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=38",
+    "idNotification": "a72a7ead-0012-45de-82c8-b65c54293af7",
+    "socket": null
+}  
+[2023-02-25 17:15:43] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Eastern Discovery (Start New Orleans) has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/tour?id=38",
+    "idNotification": "cd90f181-d28e-4694-a5b6-cbc9041228d2",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 17:15:43] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Southwest States (Ex Los Angeles)  has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=37",
+    "idNotification": "01ca6530-8849-4ea0-870c-aa917ed8ed2d",
+    "socket": null
+}  
+[2023-02-25 17:15:43] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Southwest States (Ex Los Angeles)  has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/tour?id=37",
+    "idNotification": "e5be5089-37e7-42b4-89e1-ae6e293e50ac",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 17:15:43] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Paris Vacation Travel  has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=36",
+    "idNotification": "05baed43-3289-4762-bee2-c0e3d1769081",
+    "socket": null
+}  
+[2023-02-25 17:15:43] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Los Angeles to San Francisco Express  has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=35",
+    "idNotification": "35658b6a-9ea3-4bcc-b3c4-30955cab3315",
+    "socket": null
+}  
+[2023-02-25 17:15:43] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Los Angeles to San Francisco Express  has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/tour?id=35",
+    "idNotification": "078bd0fd-4f74-4ff3-acdf-2f34a0e28253",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-25 17:15:43] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "New York: Museum of Modern Art has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=34",
+    "idNotification": "74592f99-33e7-4a76-988d-66575698e237",
+    "socket": null
+}  
+[2023-02-25 17:15:43] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "American Parks Trail end Rapid City has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/tour?id=33",
+    "idNotification": "7deea925-8781-468e-bba7-759de4dfbeac",
+    "socket": null
+}  
+[2023-02-25 17:15:54] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "LUXURY SINGLE has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/space?id=20",
+    "idNotification": "a089beb5-4646-4675-ba26-df7c05beee0b",
+    "socket": null
+}  
+[2023-02-25 17:15:54] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "BEST OF WEST VILLAGE has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/space?id=15",
+    "idNotification": "8ae878e0-9b9f-4772-9f4e-05a9034bfed5",
+    "socket": null
+}  
+[2023-02-25 17:16:20] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "My Way 100 has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/boat?id=13",
+    "idNotification": "602e7aa9-12bc-49a6-aa19-905f05e94256",
+    "socket": null
+}  
+[2023-02-25 17:16:20] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Freedom M2 has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/boat?id=11",
+    "idNotification": "b3813700-1d7c-43d9-bdbc-656661652e73",
+    "socket": null
+}  
+[2023-02-25 17:16:20] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Endless Summer W-10 has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/boat?id=10",
+    "idNotification": "55a92c82-3c6b-4c68-acd6-f16e3493a7e4",
+    "socket": null
+}  
+[2023-02-25 17:16:20] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Carpe Diem LA has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/boat?id=8",
+    "idNotification": "b6433e64-a0f7-4c60-9c29-d764f5506650",
+    "socket": null
+}  
+[2023-02-25 17:16:21] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Andiamo MX-3 has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/boat?id=5",
+    "idNotification": "0f62cf6b-f738-46e5-9806-f1bd4d5e20d9",
+    "socket": null
+}  
+[2023-02-25 17:16:21] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "BOAT 1992 ALISON has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/boat?id=4",
+    "idNotification": "f0afce46-bf03-45c6-8ad9-a73028d995d8",
+    "socket": null
+}  
+[2023-02-25 17:16:21] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Blue Moon Cruising has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/boat?id=3",
+    "idNotification": "c67e936a-43c4-44c2-be03-159121364e03",
+    "socket": null
+}  
+[2023-02-25 17:16:21] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Summer Breeze has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/boat?id=2",
+    "idNotification": "f3886ff1-5793-42ec-b0b4-844d7360fc0e",
+    "socket": null
+}  
+[2023-02-25 17:16:34] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Origami Crane Wedding Planners has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/event?id=10",
+    "idNotification": "841a0b0a-6ae1-45fc-94e3-11bd4b58615b",
+    "socket": null
+}  
+[2023-02-25 17:16:34] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Pink Crescent Moon Events has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/event?id=8",
+    "idNotification": "611ae015-fdc2-429f-bb91-4d686142c489",
+    "socket": null
+}  
+[2023-02-25 17:16:34] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Eastern Discovery has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/event?id=7",
+    "idNotification": "a9d17657-c6da-49ea-8eb2-c04ba598e3af",
+    "socket": null
+}  
+[2023-02-25 17:16:34] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Andante & Allegro Event Design has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/event?id=1",
+    "idNotification": "04a90cb1-91d5-42fc-bf34-cd4648997dd1",
+    "socket": null
+}  
+[2023-02-25 17:16:42] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Southwest States (Ex Los Angeles)  has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/event?id=5",
+    "idNotification": "539b382f-6a47-4ae6-8736-e0adfc8810c5",
+    "socket": null
+}  
+[2023-02-25 17:16:54] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Trey Mann has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/flight?id=20",
+    "idNotification": "eb5442a9-21c3-43d4-883e-eb07b75f74b7",
+    "socket": null
+}  
+[2023-02-25 17:16:54] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Mr. Edison Prohaska MD has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/flight?id=19",
+    "idNotification": "6a13851a-c394-4482-ac2d-a4733db3fb11",
+    "socket": null
+}  
+[2023-02-25 17:16:54] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Dr. Jennie Hills has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/flight?id=18",
+    "idNotification": "da01cca0-4c4b-4617-b322-5f9ed9879637",
+    "socket": null
+}  
+[2023-02-25 17:16:54] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Ayden Streich has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/flight?id=17",
+    "idNotification": "257adff7-23c1-4b9e-a42a-922a4fdb3c0d",
+    "socket": null
+}  
+[2023-02-25 17:16:54] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Renee Borer Jr. has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/flight?id=16",
+    "idNotification": "05c35f21-7bfe-4f37-acf0-fe4d76f51965",
+    "socket": null
+}  
+[2023-02-25 17:16:54] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Tyrique Bradtke has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/flight?id=15",
+    "idNotification": "6685a2e2-f7eb-4a17-8588-8a210224a229",
+    "socket": null
+}  
+[2023-02-25 17:16:54] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Roman Hansen has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/flight?id=14",
+    "idNotification": "f05eb296-6671-4609-9e6e-b6565ef5dc9a",
+    "socket": null
+}  
+[2023-02-25 17:16:54] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Ms. Mckayla Casper has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/flight?id=13",
+    "idNotification": "73b92380-8d53-47cb-a83b-65b98337f289",
+    "socket": null
+}  
+[2023-02-25 17:16:54] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Alexandre Bechtelar V has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/flight?id=12",
+    "idNotification": "f0906351-54ff-4314-906f-20cfacd4481e",
+    "socket": null
+}  
+[2023-02-25 17:16:54] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Abe Ratke Jr. has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/flight?id=11",
+    "idNotification": "7d5009db-454d-46ab-8e13-63e4caa0b6e2",
+    "socket": null
+}  
+[2023-02-25 17:16:54] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Dr. Mariano McCullough DVM has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/flight?id=10",
+    "idNotification": "fa6deb1d-29e4-41c1-a41e-a14b52adf323",
+    "socket": null
+}  
+[2023-02-25 17:16:54] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Camryn McDermott DVM has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/flight?id=9",
+    "idNotification": "a94b4670-6e2c-4164-9410-d42af973ae43",
+    "socket": null
+}  
+[2023-02-25 17:16:54] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Mr. Consuelo Kihn I has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/flight?id=8",
+    "idNotification": "c2e7261f-0296-41f9-9f12-9c5c3d7488c9",
+    "socket": null
+}  
+[2023-02-25 17:16:54] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Claudie Doyle has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/flight?id=7",
+    "idNotification": "0e8aa404-118e-464f-bd7a-94c21e77595b",
+    "socket": null
+}  
+[2023-02-25 17:16:54] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Maximilian Pagac DVM has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/flight?id=6",
+    "idNotification": "5ce40607-e412-4ed1-aebc-fbcfded3f93e",
+    "socket": null
+}  
+[2023-02-25 17:16:54] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Leon Orn has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/flight?id=5",
+    "idNotification": "63247c7e-3c61-4e07-a0c2-7ab82c2eadf5",
+    "socket": null
+}  
+[2023-02-25 17:16:54] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Dr. Bart Weber IV has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/flight?id=4",
+    "idNotification": "1784e072-6ea9-460d-9126-a49673c276a5",
+    "socket": null
+}  
+[2023-02-25 17:16:54] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Dr. Keven Bode IV has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/flight?id=3",
+    "idNotification": "aeb75cc3-496f-44df-b1c3-5058139fddbe",
+    "socket": null
+}  
+[2023-02-25 17:16:54] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Miss Samanta Dickens has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/flight?id=2",
+    "idNotification": "a36afb3e-a048-4ef0-8653-027e72e48cc3",
+    "socket": null
+}  
+[2023-02-25 17:16:54] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Unique Koelpin has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/flight?id=1",
+    "idNotification": "65fca63c-e702-4aba-a79d-47e2129bb12a",
+    "socket": null
+}  
+[2023-02-25 18:59:20] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "STAY GREENWICH VILLAGE was updated to Publish by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/space?id=22",
+    "idNotification": "2247728c-a844-4af6-916c-70d4d0c1280a",
+    "socket": null
+}  

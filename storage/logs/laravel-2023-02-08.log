@@ -1,0 +1,51 @@
+[2023-02-08 20:44:39] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Vinfast Fadil Standard was updated to Publish by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/car?id=26",
+    "idNotification": "bd1f264b-e9ea-49b9-a72b-07948b6427bc",
+    "socket": null
+}  
+[2023-02-08 20:44:39] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Vinfast Fadil Standard was updated to Publish by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/car?id=26",
+    "idNotification": "56e62996-43e1-4ba0-805d-f5e1085bdc34",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-08 20:46:24] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Vinfast Fadil Standard was updated to Publish by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/car?id=26",
+    "idNotification": "b6ab68b3-8f80-49ce-908b-e2f068406727",
+    "socket": null
+}  
+[2023-02-08 20:46:24] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Vinfast Fadil Standard was updated to Publish by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/car?id=26",
+    "idNotification": "3a1d43c3-4017-4fd0-8077-23548583cf6f",
+    "userId": 2,
+    "socket": null
+}  
+[2023-02-08 20:47:21] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Vinfast Fadil Standard was updated to Publish by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/car?id=26",
+    "idNotification": "be64aa3e-2b52-415b-ae6c-35fc97627c8c",
+    "socket": null
+}  
+[2023-02-08 20:47:21] production.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-2] with payload:
+{
+    "message": "Vinfast Fadil Standard was updated to Publish by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Solucti Technology Studio\">",
+    "link": "https:\/\/exklusivus.com\/user\/car?id=26",
+    "idNotification": "06e877ac-ef9b-4a1a-af16-eaf145c9de24",
+    "userId": 2,
+    "socket": null
+}  

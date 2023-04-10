@@ -1,0 +1,88 @@
+[2023-02-17 08:44:56] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Dylan Hotel has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/hotel?id=10",
+    "idNotification": "0a13042f-1acb-4413-850c-d207f5f67b02",
+    "socket": null
+}  
+[2023-02-17 08:44:56] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Parian Holiday Villas has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/hotel?id=9",
+    "idNotification": "2afe30a8-3394-40e8-ba8c-5cfefb44979a",
+    "socket": null
+}  
+[2023-02-17 08:44:56] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Stewart Hotel has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/hotel?id=8",
+    "idNotification": "b6c23d70-4297-4eba-9b79-1d354703e831",
+    "socket": null
+}  
+[2023-02-17 08:44:56] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Crowne Plaza Hotel has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/hotel?id=7",
+    "idNotification": "207d6558-678c-41f9-a663-aaf87ceef1e8",
+    "socket": null
+}  
+[2023-02-17 08:44:56] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "EnVision Hotel Boston has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/hotel?id=6",
+    "idNotification": "4277a535-bd83-459e-95c4-dee070dc17b8",
+    "socket": null
+}  
+[2023-02-17 08:44:56] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Studio Allston Hotel has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/hotel?id=5",
+    "idNotification": "475552bf-b676-4e46-b0a9-56b7121c663e",
+    "socket": null
+}  
+[2023-02-17 08:44:56] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Redac Gateway Hotel has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/hotel?id=4",
+    "idNotification": "0c1792d6-87e0-4ac9-8280-c4ff75c60a4f",
+    "socket": null
+}  
+[2023-02-17 08:44:56] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Castello Casole Hotel has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/hotel?id=3",
+    "idNotification": "b55170c2-576e-41f2-8f9f-3b5fd954565a",
+    "socket": null
+}  
+[2023-02-17 08:45:18] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "The May Fair Hotel has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/hotel?id=11",
+    "idNotification": "261dac9f-c929-43e6-8941-2396d0fb5261",
+    "socket": null
+}  
+[2023-02-17 08:45:18] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Hotel WBF Hommachi has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/hotel?id=2",
+    "idNotification": "72315345-37f4-48c4-a4fa-46c85122593e",
+    "socket": null
+}  
+[2023-02-17 08:45:18] production.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Hotel Stanford has been deleted by Exklusivus",
+    "avatar": "<img class=\"image-responsive\" src=\"https:\/\/exklusivus.com\/images\/avatar.png\" alt=\"Exklusivus\">",
+    "link": "https:\/\/exklusivus.com\/admin\/module\/hotel?id=1",
+    "idNotification": "6143ee55-a118-442a-b727-b34a72db6202",
+    "socket": null
+}  
